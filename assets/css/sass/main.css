@@ -1,0 +1,29 @@
+* {
+  border: 1px solid red;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.header-container-logo {
+  padding: 20px;
+  height: 20px;
+  width: 200px;
+  box-sizing: content-box;
+}
+.header-container-localisation {
+  background-color: #EAEAEA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  gap: 15px;
+}/*# sourceMappingURL=main.css.map */
