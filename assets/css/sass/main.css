@@ -12,7 +12,6 @@
 }
 
 * {
-  border: 1px solid red;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -124,11 +123,41 @@
 }
 
 .restaurant-container {
-  height: 700px;
+  height: 1200px;
   background-color: #F6F6F6;
 }
 .restaurant-container-title {
   margin: 48px 80px 20px 20px;
   font-size: 24px;
   font-weight: 700;
+}
+.restaurant-container-cards {
+  height: 250px;
+  width: 90%;
+  margin: auto;
+}
+.restaurant-container-cards-item {
+  display: flex;
+  margin: auto;
+  height: 270px;
+  width: 90%;
+  background-color: white;
+  border-radius: 25px;
+  flex-direction: column;
+  text-decoration: none;
+  color: black;
+}
+.restaurant-container-cards-item-img {
+  height: 200px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
+.restaurant-container-cards-item-title {
+  margin: 10px 0px 0px 10px;
+}
+.restaurant-container-cards-item-txt {
+  margin: 5px 0px 0px 10px;
 }/*# sourceMappingURL=main.css.map */

@@ -30,7 +30,7 @@
 .how-container {
     background-color: white;
     height: 500px;
-  
+
 
 
     &-title {
@@ -38,7 +38,7 @@
         font-size: 24px;
         font-weight: 700;
 
-   
+
     }
 
     &-cards {
@@ -47,12 +47,13 @@
         justify-content: center;
         flex-direction: column;
         margin: auto;
+
         // width: 100%;
         @media (min-width: 1250px) {
             flex-direction: row;
             margin: 50px 180px;
         }
-       
+
         &-card {
             background-color: $backGroundColorPrimary;
             height: 72px;
@@ -63,21 +64,22 @@
             align-items: center;
             border-radius: 20px;
             position: relative;
-            
-            
 
-            &-icon{
+
+
+            &-icon {
                 position: relative;
                 right: 15px;
             }
-            &-txt{
+
+            &-txt {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 font-size: 16px;
                 font-weight: bold;
-               
-                
+
+
             }
 
             &-number {
@@ -92,32 +94,57 @@
                 border-radius: 25px;
                 position: absolute;
                 left: -8px;
-                
+
 
             }
         }
     }
 }
 
-.restaurant-container{
-    height: 700px;
+.restaurant-container {
+    height: 1200px;
     background-color: $backGroundColorPrimary;
 
     &-title {
         margin: 48px 80px 20px 20px;
         font-size: 24px;
         font-weight: 700;
+    }
+        &-cards {
+            height: 250px;
+            width: 90%;
+            margin: auto;
+            
+            
+            
+            &-item {
+                display: flex;
+                margin: auto;
+                height: 270px;
+                width: 90%;
+                background-color: white;
+                border-radius: 25px;
+                flex-direction: column;
+                text-decoration: none;
+                color: black;
+                
 
-}
-}
+                &-img {
+                    height: 200px;
+                    width: 100%;
+                    object-fit: cover;
+                    border-top-right-radius: 25px;
+                    border-top-left-radius: 25px;
+                    
+                }
 
+                &-title{
+                    margin: 10px 0px 0px 10px;
+                }
 
-// @media (min-width: 1250px) { 
-//     .how-container{
-//         &-cards{
-//             flex-direction: row;
-
-//         }
-//     }
-   
-// }
+                &-txt{
+                    margin: 5px 0px 0px 10px;
+                }
+            }
+        }
+    }
