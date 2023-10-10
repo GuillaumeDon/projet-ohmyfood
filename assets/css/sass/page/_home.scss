@@ -101,50 +101,12 @@
     }
 }
 
-.restaurant-container {
+.restaurant-container{
     height: 1200px;
     background-color: $backGroundColorPrimary;
 
-    &-title {
-        margin: 48px 80px 20px 20px;
-        font-size: 24px;
-        font-weight: 700;
+    &-title{
+        padding: 10px;
     }
-        &-cards {
-            height: 250px;
-            width: 90%;
-            margin: auto;
-            
-            
-            
-            &-item {
-                display: flex;
-                margin: auto;
-                height: 270px;
-                width: 90%;
-                background-color: white;
-                border-radius: 25px;
-                flex-direction: column;
-                text-decoration: none;
-                color: black;
-                
+}
 
-                &-img {
-                    height: 200px;
-                    width: 100%;
-                    object-fit: cover;
-                    border-top-right-radius: 25px;
-                    border-top-left-radius: 25px;
-                    
-                }
-
-                &-title{
-                    margin: 10px 0px 0px 10px;
-                }
-
-                &-txt{
-                    margin: 5px 0px 0px 10px;
-                }
-            }
-        }
-    }

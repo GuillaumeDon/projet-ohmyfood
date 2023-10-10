@@ -11,22 +11,6 @@
   background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
 }
 
-.icon-new {
-  width: 80px;
-  height: 29px;
-  flex-shrink: 0;
-  border-radius: 2px;
-  background: var(--Green, #99E2D0);
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-  position: absolute;
-  top: 10px;
-  left: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: green;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -143,36 +127,5 @@
   background-color: #F6F6F6;
 }
 .restaurant-container-title {
-  margin: 48px 80px 20px 20px;
-  font-size: 24px;
-  font-weight: 700;
-}
-.restaurant-container-cards {
-  height: 250px;
-  width: 90%;
-  margin: auto;
-}
-.restaurant-container-cards-item {
-  display: flex;
-  margin-bottom: 30px;
-  height: 270px;
-  background-color: white;
-  border-radius: 25px;
-  flex-direction: column;
-  text-decoration: none;
-  color: black;
-}
-.restaurant-container-cards-item-img {
-  height: 200px;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-top-right-radius: 25px;
-  border-top-left-radius: 25px;
-}
-.restaurant-container-cards-item-title {
-  margin: 10px 0px 0px 10px;
-}
-.restaurant-container-cards-item-txt {
-  margin: 5px 0px 0px 10px;
+  padding: 10px;
 }/*# sourceMappingURL=main.css.map */
