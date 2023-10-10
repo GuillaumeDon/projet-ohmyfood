@@ -124,7 +124,7 @@
 
 .restaurant-container {
   height: 1200px;
-  background-color: red;
+  background-color: #F6F6F6;
   width: 100%;
 }
 .restaurant-container-title {
@@ -134,7 +134,6 @@
   height: 1000px;
   width: 90%;
   margin: auto;
-  background-color: green;
   display: flex;
 }
 .restaurant-container-cards-item {
@@ -154,8 +153,12 @@
 .restaurant-container-cards-item-box-new {
   width: 100px;
   height: 30px;
-  background-color: #9356DC;
+  background-color: #99E2D0;
+  color: #008766;
   position: absolute;
   top: 10px;
   right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */
