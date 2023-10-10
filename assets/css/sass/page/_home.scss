@@ -162,7 +162,9 @@
             // background-color: violet;
             margin: 5px 0px 5px 10px;
             color: black;
-            // position: relative;
+            position: relative;
+            // width: 100%;
+            background-color: red;
             
             &-title{
                 font-size: 18px;
@@ -172,10 +174,19 @@
                 font-size: 17px;
                 font-weight: 300;
             }
+
+            &-heart{
+                height: 30px;
+                width: 30px;
+                background-color: aqua;
+                position: absolute;
+                top:0px;
+                left: 90%;
+              }
             
           } 
           
-          
+ 
         }
     }
 }
@@ -185,3 +196,5 @@ article{
     background-color: white;
     border-radius: 15px;
 }
+
+

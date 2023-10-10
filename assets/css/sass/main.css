@@ -170,6 +170,8 @@ a {
 .restaurant-container-cards-item-contain {
   margin: 5px 0px 5px 10px;
   color: black;
+  position: relative;
+  background-color: red;
 }
 .restaurant-container-cards-item-contain-title {
   font-size: 18px;
@@ -177,6 +179,14 @@ a {
 .restaurant-container-cards-item-contain-txt {
   font-size: 17px;
   font-weight: 300;
+}
+.restaurant-container-cards-item-contain-heart {
+  height: 30px;
+  width: 30px;
+  background-color: aqua;
+  position: absolute;
+  top: 0px;
+  left: 90%;
 }
 
 article {
