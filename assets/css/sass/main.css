@@ -254,9 +254,9 @@ article {
     align-items: center;
     margin: auto;
     height: 608px;
+    gap: 5px;
   }
   .restaurant-container-cards-item {
-    width: calc(50% - 100px);
-    margin: auto;
+    width: calc(43% - 8px);
   }
 }/*# sourceMappingURL=main.css.map */

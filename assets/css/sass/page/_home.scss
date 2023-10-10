@@ -213,6 +213,7 @@ article {
             align-items: center;
             margin: auto;
             height: 608px;
+            gap: 5px;
             
             
 
@@ -221,12 +222,14 @@ article {
                 // display: flex;
                
                 // background-color: yellow;
-                width: calc(50% - 100px);
-                margin: auto;
+                width: calc(43% - 8px);
+                
+                // margin: auto;
                
                 
                 
             }
         }
     }
+
 }
