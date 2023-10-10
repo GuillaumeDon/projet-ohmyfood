@@ -24,7 +24,7 @@
         <section class="intro-container">
             <h1 class="intro-container-title">Réservez le menu qui vous convient</h1>
             <p class="intro-container-txt">Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
-            <a href="#" class="intro-container-btn btn-explore">Explorer nos restaurants</a>
+            <a href="#restaurant" class="intro-container-btn btn-explore">Explorer nos restaurants</a>
         </section>
         <!----------------------ZONE FIABLE--------------------------->
 
@@ -54,7 +54,7 @@
             </div>
         </section>
         <!----------------------ZONE FIABLE--------------------------->
-        <section class="restaurant-container">
+        <section id="restaurant" class="restaurant-container">
             <h2 class="restaurant-container-title">Restaurants</h2>
             <div class="restaurant-container-cards">
                 <a href="#" class="restaurant-container-cards-item">
@@ -67,11 +67,8 @@
                         <div class="restaurant-container-cards-item-contain">
                             <h3 class="restaurant-container-cards-item-contain-title"> La palette du goût</h3>
                             <p class="restaurant-container-cards-item-contain-txt">Ménilmontant</p>
-                            <div class="restaurant-container-cards-item-contain-heart heart-shape"></div>
-                            <!-- <i class="restaurant-container-cards-item-contain-heart fa-regular fa-heart"></i> -->
-
-
-
+                            <!-- <div class="restaurant-container-cards-item-contain-heart heart-shape"></div> -->
+                            <i class="restaurant-container-cards-item-contain-heart heart fa-regular fa-heart fa-2xl"></i>
                         </div>
                         <!--test hors de la div-->
                         <!-- <i class="restaurant-container-cards-item-contain-heart fa-regular fa-heart"></i> -->
@@ -88,7 +85,7 @@
                         <div class="restaurant-container-cards-item-contain">
                             <h3 class="restaurant-container-cards-item-contain-title"> La palette du goût</h3>
                             <p class="restaurant-container-cards-item-contain-txt">Ménilmontant</p>
-                            <i class="restaurant-container-cards-item-contain-heart fa-regular fa-heart"></i>
+<i class="restaurant-container-cards-item-contain-heart heart fa-regular fa-heart fa-2xl"></i>
                             <!-- <div class="restaurant-container-cards-item-contain-txt-heart"></div> -->
                         </div>
                     </article>
@@ -101,10 +98,10 @@
                                 src="./assets/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
                             <!-- <div class="restaurant-container-cards-item-box-new">Nouveau</div> -->
                         </div>
-                        <div class="restaurant-container-cards-item-contain">
+                        <div id="restaurant" class="restaurant-container-cards-item-contain">
                             <h3 class="restaurant-container-cards-item-contain-title"> La palette du goût</h3>
                             <p class="restaurant-container-cards-item-contain-txt">Ménilmontant</p>
-                            <i class="restaurant-container-cards-item-contain-heart fa-regular fa-heart"></i>
+                            <i class="restaurant-container-cards-item-contain-heart heart fa-regular fa-heart fa-2xl"></i>
                             <!-- <div class="restaurant-container-cards-item-contain-txt-heart"></div> -->
                         </div>
                     </article>
@@ -120,15 +117,38 @@
                         <div class="restaurant-container-cards-item-contain">
                             <h3 class="restaurant-container-cards-item-contain-title"> La palette du goût</h3>
                             <p class="restaurant-container-cards-item-contain-txt">Ménilmontant</p>
-                            <i class="restaurant-container-cards-item-contain-heart fa-regular fa-heart"></i>
+                            <i class="restaurant-container-cards-item-contain-heart heart fa-regular fa-heart fa-2xl"></i>
                             <!-- <div class="restaurant-container-cards-item-contain-txt-heart"></div> -->
                         </div>
                     </article>
                 </a>
             </div>
         </section>
-
     </main>
+    <footer class="footer-container">
+        <nav class="footer-container-nav">
+            <img class="footer-container-nav-logo" src="./assets/img/logo/ohmyfood-white.png">
+            <ul class="footer-container-nav-ul">
+
+                <li class="footer-container-nav-ul-li">
+                    <i class="fa-solid fa-utensils"></i>
+                    <a href="#">Proposer un restaurant</a>
+                </li>
+                <li class="footer-container-nav-ul-li">
+                    <i class="fa-solid fa-handshake-angle"></i>
+                    <a href="#">Devenir partenaire</a>
+                </li>
+                <li class="footer-container-nav-ul-li">
+                    <a href="#">Mentions légales</a>
+                </li>
+                <li class="footer-container-nav-ul-li">
+                    <a href="mailto:email@example.com">contact </a>
+                </li>
+
+            </ul>
+        </nav>
+
+    </footer>
 </body>
 
 </html>
