@@ -11,6 +11,22 @@
   background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
 }
 
+.icon-new {
+  width: 80px;
+  height: 29px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  background: var(--Green, #99E2D0);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  position: absolute;
+  top: 10px;
+  left: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: green;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -138,9 +154,8 @@
 }
 .restaurant-container-cards-item {
   display: flex;
-  margin: auto;
+  margin-bottom: 30px;
   height: 270px;
-  width: 90%;
   background-color: white;
   border-radius: 25px;
   flex-direction: column;
