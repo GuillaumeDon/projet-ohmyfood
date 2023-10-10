@@ -1,0 +1,112 @@
+.intro-container {
+    background-color: $backGroundColorPrimary;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0px 20px;
+
+
+    &-title {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    &-txt {
+        margin: 10px 0px;
+        // padding: 20px 5px;
+        font-size: 18px;
+        font-weight: 300;
+
+    }
+
+    &-btn {
+        margin-top: 25px;
+    }
+}
+
+.how-container {
+    background-color: white;
+    height: 500px;
+
+
+
+    &-title {
+        margin: 48px 80px 20px 20px;
+        font-size: 24px;
+        font-weight: 700;
+
+
+    }
+
+    &-cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: auto;
+
+        // width: 100%;
+        @media (min-width: 1250px) {
+            flex-direction: row;
+            margin: 50px 180px;
+        }
+
+        &-card {
+            background-color: $backGroundColorPrimary;
+            height: 72px;
+            width: 90%;
+            display: flex;
+            margin: 15px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            position: relative;
+
+
+
+            &-icon {
+                position: relative;
+                right: 15px;
+            }
+
+            &-txt {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 16px;
+                font-weight: bold;
+
+
+            }
+
+            &-number {
+                width: 15.273px;
+                height: 14.545px;
+                background-color: var(--Primary, #9356DC);
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 14.182px;
+                border-radius: 25px;
+                position: absolute;
+                left: -8px;
+
+
+            }
+        }
+    }
+}
+
+.restaurant-container{
+    height: 1200px;
+    background-color: $backGroundColorPrimary;
+
+    &-title{
+        padding: 10px;
+    }
+}
+
