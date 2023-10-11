@@ -18,6 +18,7 @@
         height: 36px;
         width: 197px;
         box-sizing: content-box;
+        
     }
 
     &-localisation{
@@ -41,8 +42,13 @@
             
           
         // }
-        // &-txt{
-        //     margin-right: 38%;
-        // }
+        &-txt{
+            &[type="text"]{
+                background-color: $backGroundColorSecondary;
+                border: none;
+                width: 95px;
+
+            }
+        }
     }
 }

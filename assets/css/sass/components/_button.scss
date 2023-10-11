@@ -1,6 +1,6 @@
 .btn-explore{
     height: 50px;
-    width: 218px;
+    width: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,6 +9,7 @@
     border-radius: 25px;
     background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
     transition: background 0.3s ease, box-shadow 0.3s ease;
+    padding: 5px 20px;
 
     &:hover{
         background: var(--Button-Gradient-Hover, linear-gradient(193deg, lighten(#9356DC, 10%) -11.44%, lighten(#FF79DA, 10%) 123.93%));  // Éclaircissement des couleurs de fond
