@@ -64,7 +64,7 @@
         // width: 100%;
         @media (min-width: 1250px) {
             flex-direction: row;
-            margin: 50px 180px;
+            margin: 50px 100px;
         }
 
         &-card {
@@ -89,6 +89,7 @@
             }
             #store:hover, #list-ul:hover, #mobile-screen-button:hover {
                 fill: #9356DC;
+                stroke: #9356DC;
                 cursor: pointer;
             }
             
@@ -191,6 +192,8 @@
                 margin: 5px 0px 5px 10px;
                 color: black;
                 position: relative;
+                line-height: 7px;
+                
                 // width: 100%;
                 // background-color: red;
 
@@ -201,6 +204,7 @@
                 &-txt {
                     font-size: 17px;
                     font-weight: 300;
+                    padding-bottom: 20px;
                 }
 
                 &-heart{
@@ -235,7 +239,7 @@ article {
         height: 228.38px;
 
         &-title{
-            margin-left: 200px;
+            margin-left: 120px;
         }
     }
     .restaurant-container {
@@ -245,13 +249,13 @@ article {
         // display: flex;
         // flex-direction: row;
         &-title{
-            margin-left: 200px;
+            margin-left: 120px;
         }
 
         &-cards {
 
             // background-color: #9356DC;
-            width: 85%;
+            width: 100%;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
