@@ -1,7 +1,6 @@
 .btn-explore{
     height: 50px;
     width: 218px;
-    background-color: red;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,13 +8,21 @@
     color: white;
     border-radius: 25px;
     background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+    transition: background 0.3s ease, box-shadow 0.3s ease;
 
+    &:hover{
+        background: var(--Button-Gradient-Hover, linear-gradient(193deg, lighten(#9356DC, 10%) -11.44%, lighten(#FF79DA, 10%) 123.93%));  // Éclaircissement des couleurs de fond
+        box-shadow: 0 4px 8px rgba(0,0,0,0.25); 
+    }
 }
 
+
+
+
 .heart{
-    height: 30px;
-    width: 30px;
-    background-color: aqua;
+    // height: 30px;
+    // width: 30px;
+    // background-color: aqua;
     position: absolute;
     top:15px;
     left: 90%;

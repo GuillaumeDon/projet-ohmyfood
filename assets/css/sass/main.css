@@ -1,7 +1,6 @@
 .btn-explore {
   height: 50px;
   width: 218px;
-  background-color: red;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,12 +8,14 @@
   color: white;
   border-radius: 25px;
   background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+.btn-explore:hover {
+  background: var(--Button-Gradient-Hover, linear-gradient(193deg, #ae80e5 -11.44%, #fface8 123.93%));
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
 }
 
 .heart {
-  height: 30px;
-  width: 30px;
-  background-color: aqua;
   position: absolute;
   top: 15px;
   left: 90%;
@@ -41,6 +42,13 @@ a {
   justify-content: center;
   align-items: center;
   margin: 0;
+  position: relative;
+}
+.header-container-arrow {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  visibility: hidden;
 }
 .header-container-logo {
   padding: 20px;
@@ -56,6 +64,16 @@ a {
   padding: 10px;
   width: 100%;
   gap: 15px;
+}
+
+.header-container-arrow-2 {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  visibility: visible;
+}
+.header-container-localisation-2 {
+  display: none;
 }
 
 .footer-container {
@@ -95,7 +113,7 @@ a {
   }
   .footer-container-nav-ul {
     display: flex;
-    gap: 30px;
+    gap: 20px;
   }
 }
 .intro-container {
@@ -123,10 +141,10 @@ a {
 
 .how-container {
   background-color: white;
-  height: 500px;
+  height: 400px;
 }
 .how-container-title {
-  margin: 48px 80px 20px 20px;
+  margin: 48px 80px 20px 30px;
   font-size: 24px;
   font-weight: 700;
 }
@@ -180,12 +198,15 @@ a {
 }
 
 .restaurant-container {
-  height: 1200px;
+  height: 1300px;
   background-color: #F6F6F6;
   width: 100%;
 }
 .restaurant-container-title {
   padding: 70px 0px 20px 10px;
+  margin: 48px 80px 20px 30px;
+  font-size: 24px;
+  font-weight: 700;
 }
 .restaurant-container-cards {
   height: 1000px;
@@ -242,11 +263,17 @@ article {
   .how-container {
     height: 228.38px;
   }
+  .how-container-title {
+    margin-left: 200px;
+  }
   .restaurant-container {
     height: 750px;
   }
+  .restaurant-container-title {
+    margin-left: 200px;
+  }
   .restaurant-container-cards {
-    width: 100%;
+    width: 85%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -257,6 +284,9 @@ article {
     gap: 5px;
   }
   .restaurant-container-cards-item {
-    width: calc(43% - 8px);
+    width: calc(43% - 30px);
+  }
+  .card-1, .card-3 {
+    margin-right: 25px;
   }
 }/*# sourceMappingURL=main.css.map */
