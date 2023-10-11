@@ -18,17 +18,16 @@
 
 
 
+////GESTION DES COEURS///
+input[type="checkbox"] {
+    display: none;
+  }
 
-.heart{
-    // height: 30px;
-    // width: 30px;
-    // background-color: aqua;
-    position: absolute;
-    top:15px;
-    left: 90%;
-}
+  label {
+    cursor: pointer;
+  }
 
-.heart:active{
-    background-color: red;
-}
-
+  input[type="checkbox"]:checked + label svg path {
+    fill: violet !important;
+    stroke: black;
+  }

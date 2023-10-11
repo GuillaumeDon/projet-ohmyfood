@@ -2,13 +2,15 @@
     height:186px;
     background-color: #353535;
     color: #FFFFFF;
+    padding: 20px;
     
     &-nav{
-        padding: 20px;
+        // padding: 20px;
         justify-content: flex-start;
 
         &-logo{
-            margin-left: 10px;
+            margin-left: 50px;
+            font-family: $fontFamilyTitle;
         }
 
         &-ul{
@@ -32,10 +34,14 @@
     .footer-container{
 
         height: 114px;
+
         &-nav{
+            padding: 20px;
         display: flex;
         // justify-content: flex-end;
         flex-direction: row-reverse;
+        
+       
 
         &-logo{
             margin-left: 100px;

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 .btn-explore {
   height: 50px;
   width: 218px;
@@ -15,21 +16,25 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
 }
 
-.heart {
-  position: absolute;
-  top: 15px;
-  left: 90%;
+input[type=checkbox] {
+  display: none;
 }
 
-.heart:active {
-  background-color: red;
+label {
+  cursor: pointer;
 }
 
-* {
-  margin: 0;
+input[type=checkbox]:checked + label svg path {
+  fill: violet !important;
+  stroke: black;
+}
+
+html {
+  margin: auto;
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  max-width: 1440px;
 }
 
 a {
@@ -80,13 +85,14 @@ a {
   height: 186px;
   background-color: #353535;
   color: #FFFFFF;
+  padding: 20px;
 }
 .footer-container-nav {
-  padding: 20px;
   justify-content: flex-start;
 }
 .footer-container-nav-logo {
-  margin-left: 10px;
+  margin-left: 50px;
+  font-family: "Shrikhand", serif;
 }
 .footer-container-nav-ul {
   list-style-type: none;
@@ -105,6 +111,7 @@ a {
     height: 114px;
   }
   .footer-container-nav {
+    padding: 20px;
     display: flex;
     flex-direction: row-reverse;
   }
@@ -198,13 +205,13 @@ a {
 }
 
 .restaurant-container {
-  height: 1300px;
+  height: 1450px;
   background-color: #F6F6F6;
   width: 100%;
 }
 .restaurant-container-title {
-  padding: 70px 0px 20px 10px;
-  margin: 48px 80px 20px 30px;
+  padding-top: 20px;
+  margin: 48px 80px 0px 30px;
   font-size: 24px;
   font-weight: 700;
 }
@@ -267,7 +274,7 @@ article {
     margin-left: 200px;
   }
   .restaurant-container {
-    height: 750px;
+    height: 830px;
   }
   .restaurant-container-title {
     margin-left: 200px;
@@ -280,7 +287,7 @@ article {
     justify-content: center;
     align-items: center;
     margin: auto;
-    height: 608px;
+    height: 650px;
     gap: 5px;
   }
   .restaurant-container-cards-item {
