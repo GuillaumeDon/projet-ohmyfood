@@ -20,6 +20,14 @@
             &-li{
                 margin: 10px;
                 text-decoration: none;
+
+                &-img{
+                    width: 20px;
+                    height: 15px;
+                    color: white;
+                    fill: white;
+                    
+                }
             }
             &-li a{
                 text-decoration: none;

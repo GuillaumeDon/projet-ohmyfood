@@ -50,6 +50,17 @@
         flex-direction: column;
         margin: auto;
 
+        // &-card{
+        //     &-icon{
+        //         &:hover{
+        //             background-color: violet;
+        //         }
+        //     }
+        // }
+    //    svg:hover{
+    //     fill: green;
+    //    }
+
         // width: 100%;
         @media (min-width: 1250px) {
             flex-direction: row;
@@ -73,7 +84,14 @@
             &-icon {
                 position: relative;
                 right: 15px;
+                width :18px;
+                 height: 19px;
             }
+            #store:hover, #list-ul:hover, #mobile-screen-button:hover {
+                fill: #9356DC;
+                cursor: pointer;
+            }
+            
 
             &-txt {
                 display: flex;
@@ -185,22 +203,24 @@
                     font-weight: 300;
                 }
 
-    //             &-heart{
-    //                 // background-color: red;
-                   
-    //                 &:active{
-    //                     background-color: red;
-    //                     -webkit-mask-image: url(./../../../img/icons/hearth.svg);
-    // mask-image: url(./../../../img/icons/hearth.svg);
-    //                 }
-    //             }
+                &-heart{
+ 
+                    position: absolute;
+                    bottom: 40px;
+                    right: 30px;
+
+                    &:active{
+                        color: red;
+                    }
+                    }
+                }
 
             }
 
 
         }
     }
-}
+
 
 article {
     margin: 20px;

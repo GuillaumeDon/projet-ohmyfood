@@ -17,17 +17,3 @@
 }
 
 
-
-////GESTION DES COEURS///
-input[type="checkbox"] {
-    display: none;
-  }
-
-  label {
-    cursor: pointer;
-  }
-
-  input[type="checkbox"]:checked + label svg path {
-    fill: violet !important;
-    stroke: black;
-  }
