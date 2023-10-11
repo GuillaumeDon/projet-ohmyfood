@@ -66,6 +66,7 @@
             align-items: center;
             border-radius: 20px;
             position: relative;
+            
 
 
 
@@ -85,8 +86,8 @@
             }
 
             &-number {
-                width: 15.273px;
-                height: 14.545px;
+                width: 24px;
+                height: 24px;
                 background-color: var(--Primary, #9356DC);
                 color: white;
                 display: flex;
@@ -95,7 +96,7 @@
                 font-size: 14.182px;
                 border-radius: 25px;
                 position: absolute;
-                left: -8px;
+                left: -12px;
 
 
             }
