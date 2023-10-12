@@ -93,7 +93,7 @@ body{
                 justify-content: center; 
             }
         
-            &:hover {
+            &:active {
                 .hover-container {
                     width: 59px; 
                 }
@@ -170,7 +170,7 @@ body{
     transition: transform 0.3s ease;
 }
 
-.container-menu-section-card:hover .hover-container img {
+.container-menu-section-card:active .hover-container img {
     transform: rotate(360deg);
 }
 

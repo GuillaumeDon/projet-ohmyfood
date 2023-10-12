@@ -493,10 +493,10 @@ body {
   align-items: center;
   justify-content: center;
 }
-.container-menu-section-card:hover .hover-container {
+.container-menu-section-card:active .hover-container {
   width: 59px;
 }
-.container-menu-section-card:hover .container-menu-section-card-price {
+.container-menu-section-card:active .container-menu-section-card-price {
   transform: translateX(-50px);
 }
 .container-menu-section-card-content {
@@ -526,7 +526,7 @@ body {
   transition: transform 0.3s ease;
 }
 
-.container-menu-section-card:hover .hover-container img {
+.container-menu-section-card:active .hover-container img {
   transform: rotate(360deg);
 }
 
