@@ -121,13 +121,25 @@ body{
                 justify-content: center;
                 // align-items: center;
                 line-height: 1px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                // width: 100%;
+
                 // text-align: left;
 
-                &-title{
-                    // margin-top: 30px;
-                }
+                // &-title{
+                //     max-width: 300px;
+                  
+                //     white-space: nowrap;
+                //     text-overflow: ellipsis;
+                    
+                
+                // }
                 // &-txt{
-                //     margin-bottom: 60px;
+                    
+                //     white-space: nowrap;
+                //     text-overflow: ellipsis
                 // }
             }
             &-price{
@@ -147,14 +159,6 @@ body{
 
 
 
-.underline-title{
-    text-decoration: underline;
-    text-underline-offset: 8px;
-    text-decoration-color: #99E2D0;
-    
-    
-    
-}
 
 
 

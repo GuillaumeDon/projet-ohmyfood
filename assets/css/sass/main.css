@@ -121,6 +121,15 @@
   fill: #FF79DA;
   stroke: none;
 }
+.heart:hover {
+  cursor: pointer;
+}
+
+.underline-title {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  text-decoration-color: #99E2D0;
+}
 
 html {
   margin: auto;
@@ -505,6 +514,9 @@ body {
   flex-direction: column;
   justify-content: center;
   line-height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .container-menu-section-card-price {
   display: flex;
@@ -514,12 +526,6 @@ body {
 .container-menu-btn {
   width: 30%;
   margin: auto;
-}
-
-.underline-title {
-  text-decoration: underline;
-  text-underline-offset: 8px;
-  text-decoration-color: #99E2D0;
 }
 
 .hover-container img {
