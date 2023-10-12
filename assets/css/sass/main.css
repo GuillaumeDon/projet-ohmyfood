@@ -386,11 +386,12 @@ body {
 }
 
 .container-menu {
-  height: 1200px;
+  height: 100%;
   background-color: #F6F6F6;
   border-top-right-radius: 40px;
   border-top-left-radius: 40px;
   margin-top: -50px;
+  padding-bottom: 50px;
 }
 .container-menu-intro {
   display: flex;
@@ -404,6 +405,9 @@ body {
 }
 .container-menu-intro-heart {
   margin-right: 20px;
+}
+.container-menu .section-4 {
+  height: 390px;
 }
 .container-menu-section {
   height: 300px;

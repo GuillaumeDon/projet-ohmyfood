@@ -18,12 +18,15 @@ body{
 }
 
 .container-menu{
-    height: 1200px;
+    height: 100%;
     background-color:  $backGroundColorPrimary;
     border-top-right-radius: 40px;
     border-top-left-radius: 40px;
     margin-top: -50px;
+    padding-bottom: 50px;
 
+ 
+   
     &-intro{
         // background-color: red;
         display: flex;
@@ -42,6 +45,9 @@ body{
 
     }
 
+    .section-4{
+        height: 390px;
+    }
     &-section{
         height: 300px;
         // margin-bottom: 40px;
@@ -185,7 +191,6 @@ body{
         margin-top: -50px;
     }
 }
-
 
 
 
