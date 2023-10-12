@@ -277,7 +277,8 @@ a {
   stroke: #101010;
 }
 .restaurant-container-cards-item-contain-heart:active {
-  fill: #c150a1;
+  fill: #FF79DA;
+  stroke: none;
 }
 
 article {
