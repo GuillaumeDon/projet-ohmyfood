@@ -1,12 +1,59 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-/* Initially hide all sections */
+#loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #99E2D0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeOut 3s forwards;
+  animation-delay: 3s;
+}
+
+.loader {
+  border: 6px solid #9356DC;
+  border-top: 6px solid #FF79DA;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.main-home {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 3s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
 .container-menu-section {
   opacity: 0;
-  transform: translateY(20px); /* A slight move down for an extra effect */
+  transform: translateY(20px);
   visibility: hidden;
 }
 
-@keyframes fadeInUp {
+@keyframes displayCard {
   from {
     opacity: 0;
     transform: translateY(20px);
@@ -19,23 +66,23 @@
   }
 }
 .container-menu-section:nth-child(1) {
-  animation: fadeInUp 3s forwards;
-  animation-delay: 0.5s;
-}
-
-.container-menu-section:nth-child(2) {
-  animation: fadeInUp 3s forwards;
+  animation: displayCard 1s forwards;
   animation-delay: 1s;
 }
 
+.container-menu-section:nth-child(2) {
+  animation: displayCard 1s forwards;
+  animation-delay: 2s;
+}
+
 .container-menu-section:nth-child(3) {
-  animation: fadeInUp 3s forwards;
-  animation-delay: 1.5s;
+  animation: displayCard 1s forwards;
+  animation-delay: 3s;
 }
 
 .container-menu-section:nth-child(4) {
-  animation: fadeInUp 3s forwards;
-  animation-delay: 2s;
+  animation: displayCard 1s forwards;
+  animation-delay: 4s;
 }
 
 .btn-explore {
@@ -54,6 +101,7 @@
 .btn-explore:hover {
   background: var(--Button-Gradient-Hover, linear-gradient(193deg, #ae80e5 -11.44%, #fface8 123.93%));
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 
 .arrow {
@@ -401,6 +449,30 @@ body {
   justify-content: space-between;
   height: 69px;
   box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.container-menu-section-card:hover {
+  cursor: pointer;
+}
+.container-menu-section-card .hover-container {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  border-radius: 0 15px 15px 0;
+  background-color: #99E2D0;
+  overflow: hidden;
+  transition: width 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-menu-section-card:hover .hover-container {
+  width: 59px;
+}
+.container-menu-section-card:hover .container-menu-section-card-price {
+  transform: translateX(-50px);
 }
 .container-menu-section-card-content {
   padding: 30px;
@@ -423,6 +495,14 @@ body {
   text-decoration: underline;
   text-underline-offset: 8px;
   text-decoration-color: #99E2D0;
+}
+
+.hover-container img {
+  transition: transform 0.3s ease;
+}
+
+.container-menu-section-card:hover .hover-container img {
+  transform: rotate(360deg);
 }
 
 @media (min-width: 1250px) {

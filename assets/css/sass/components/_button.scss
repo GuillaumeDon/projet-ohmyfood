@@ -13,7 +13,8 @@
 
     &:hover{
         background: var(--Button-Gradient-Hover, linear-gradient(193deg, lighten(#9356DC, 10%) -11.44%, lighten(#FF79DA, 10%) 123.93%));  // Éclaircissement des couleurs de fond
-        box-shadow: 0 4px 8px rgba(0,0,0,0.25); 
+        box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+        cursor: pointer;
     }
 }
 

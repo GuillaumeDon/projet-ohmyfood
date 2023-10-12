@@ -1,11 +1,11 @@
-/* Initially hide all sections */
+
 .container-menu-section {
     opacity: 0;
-    transform: translateY(20px); /* A slight move down for an extra effect */
+    transform: translateY(20px); 
     visibility: hidden;
 }
 
-@keyframes fadeInUp {
+@keyframes displayCard {
     from {
         opacity: 0;
         transform: translateY(20px);
@@ -21,22 +21,22 @@
 
 
 .container-menu-section:nth-child(1) {
-    animation: fadeInUp 3s forwards;
-    animation-delay: 0.5s;
-}
-
-.container-menu-section:nth-child(2) {
-    animation: fadeInUp 3s forwards;
+    animation: displayCard 1s forwards;
     animation-delay: 1s;
 }
 
+.container-menu-section:nth-child(2) {
+    animation: displayCard 1s forwards;
+    animation-delay: 2s;
+}
+
 .container-menu-section:nth-child(3) {
-    animation: fadeInUp 3s forwards;
-    animation-delay: 1.5s;
+    animation: displayCard 1s forwards;
+    animation-delay: 3s;
 }
 
 .container-menu-section:nth-child(4) {
-    animation: fadeInUp 3s forwards;
-    animation-delay: 2s;
+    animation: displayCard 1s forwards;
+    animation-delay: 4s;
 }
 

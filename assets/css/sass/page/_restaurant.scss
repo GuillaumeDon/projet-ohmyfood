@@ -57,7 +57,49 @@ body{
             justify-content: space-between;
             height: 69px;
             box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10);
+            position: relative;
             
+            &:hover{
+                cursor: pointer;
+            }
+            
+
+
+
+            .hover-container {
+                position: absolute;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                width: 0; 
+                border-radius: 0 15px 15px 0;
+                background-color: #99E2D0; 
+                overflow: hidden;  
+                transition: width 0.3s ease;  
+                display: flex;
+                align-items: center;
+                justify-content: center; 
+            }
+        
+            &:hover {
+                .hover-container {
+                    width: 59px; 
+                }
+        
+                .container-menu-section-card-price {
+                    transform: translateX(-50px);  // Push the price to the left by the width of the hover container
+                }
+                
+                
+            }
+
+
+
+
+
+
+
+
 
             &-content{
                 // background-color: green;
@@ -112,7 +154,13 @@ body{
 
 
 
+.hover-container img {
+    transition: transform 0.3s ease;
+}
 
+.container-menu-section-card:hover .hover-container img {
+    transform: rotate(360deg);
+}
 
 
 
@@ -131,3 +179,7 @@ body{
         margin-top: -50px;
     }
 }
+
+
+
+
