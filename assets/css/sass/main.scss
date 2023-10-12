@@ -1,8 +1,10 @@
 @import'./utils/mixins';
 @import'./components/loading';
 @import'./components/button';
+@import'./components/arrow';
+@import'./components/heart';
 @import'./base/normalize';
 @import'./layout/header';
-@import'./layout/header-page';
 @import'./layout/footer';
 @import'./page/home';
+@import'./page/restaurant';

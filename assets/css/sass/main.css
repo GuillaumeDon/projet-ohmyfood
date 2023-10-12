@@ -1,52 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-#loading-screen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #99E2D0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: fadeOut 3s forwards;
-  animation-delay: 3s;
-}
-
-.loader {
-  border: 6px solid #9356DC;
-  border-top: 6px solid #FF79DA;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes fadeOut {
-  to {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-main {
-  opacity: 0;
-  animation: fadeIn 1s forwards;
-  animation-delay: 3s;
-}
-
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
-}
 .btn-explore {
   height: 50px;
   width: auto;
@@ -63,6 +15,24 @@ main {
 .btn-explore:hover {
   background: var(--Button-Gradient-Hover, linear-gradient(193deg, #ae80e5 -11.44%, #fface8 123.93%));
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.arrow {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  visibility: visible;
+}
+
+.heart {
+  width: 23px;
+  height: 21px;
+  fill: white;
+  stroke: #101010;
+}
+.heart:active {
+  fill: #FF79DA;
+  stroke: none;
 }
 
 html {
@@ -85,12 +55,6 @@ a {
   margin: 0;
   position: relative;
 }
-.header-container-arrow {
-  position: absolute;
-  left: 20px;
-  top: 20px;
-  visibility: hidden;
-}
 .header-container-logo {
   padding: 20px;
   height: 36px;
@@ -110,16 +74,6 @@ a {
   background-color: #D2D2D2;
   border: none;
   width: 95px;
-}
-
-.header-container-arrow-2 {
-  position: absolute;
-  left: 20px;
-  top: 20px;
-  visibility: visible;
-}
-.header-container-localisation-2 {
-  display: none;
 }
 
 .footer-container {
@@ -319,14 +273,6 @@ a {
   position: absolute;
   bottom: 40px;
   right: 30px;
-  width: 23px;
-  height: 21px;
-  fill: white;
-  stroke: #101010;
-}
-.restaurant-container-cards-item-contain-heart:active {
-  fill: #FF79DA;
-  stroke: none;
 }
 
 article {
@@ -364,5 +310,84 @@ article {
   }
   .card-1, .card-3 {
     margin-right: 25px;
+  }
+}
+body {
+  margin: 0;
+}
+
+.intro {
+  background: url(./../../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 275px;
+  width: 100%;
+}
+
+.container-menu {
+  height: 1350px;
+  background-color: #F6F6F6;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+  margin-top: -50px;
+}
+.container-menu-intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Shrikhand", serif;
+  margin-top: 30px;
+}
+.container-menu-intro-title {
+  margin-left: 20px;
+}
+.container-menu-intro-heart {
+  margin-right: 20px;
+}
+.container-menu-section {
+  height: 300px;
+}
+.container-menu-section-title {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+.container-menu-section-card {
+  display: flex;
+  justify-content: space-between;
+  height: 69px;
+  box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
+}
+.container-menu-section-card-content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1px;
+}
+.container-menu-section-card-price {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 15px;
+}
+
+.underline-title {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  text-decoration-color: #99E2D0;
+}
+
+@media (min-width: 1250px) {
+  .intro {
+    height: 343px;
+  }
+  .container-menu {
+    width: 60%;
+    margin: auto;
+    margin-top: -50px;
   }
 }/*# sourceMappingURL=main.css.map */

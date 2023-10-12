@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+}
+
+.intro{
+    background: url(./../../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 275px;
+    width: 100%;
+}
+
+.container-menu{
+    height: 1350px;
+    background-color:  $backGroundColorPrimary;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    margin-top: -50px;
+
+    &-intro{
+        // background-color: red;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: $fontFamilyTitle;
+        margin-top: 30px;
+        
+        &-title{
+            margin-left: 20px;
+        }
+        
+        &-heart{
+            margin-right: 20px;
+        }
+
+    }
+
+    &-section{
+        height: 300px;
+        // margin-bottom: 40px;
+        // background-color: red;
+
+        &-title{
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            text-transform: uppercase;
+            margin-left: 20px;
+        }
+
+        &-card{
+            // background-color: aqua;
+            display: flex;
+            justify-content: space-between;
+            height: 69px;
+            box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10);
+            
+
+            &-content{
+                // background-color: green;
+                padding: 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                // align-items: center;
+                line-height: 1px;
+                // text-align: left;
+
+                &-title{
+                    // margin-top: 30px;
+                }
+                // &-txt{
+                //     margin-bottom: 60px;
+                // }
+            }
+            &-price{
+                display: flex;
+                flex-direction: column-reverse;
+                padding: 15px;
+            }
+        }
+    }
+}
+
+
+
+
+.underline-title{
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-color: #99E2D0;
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1250px) {
+
+    .intro{
+        height: 343px;
+    }
+    .container-menu{
+        width: 60%;
+       
+        margin: auto;
+        margin-top: -50px;
+    }
+}
