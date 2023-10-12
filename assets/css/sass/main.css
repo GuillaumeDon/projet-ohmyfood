@@ -459,6 +459,9 @@ body {
 }
 .container-menu-intro-title {
   margin-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .container-menu-intro-heart {
   margin-right: 20px;
@@ -508,14 +511,19 @@ body {
 .container-menu-section-card:active .container-menu-section-card-price {
   transform: translateX(-50px);
 }
+@media (max-width: 490px) {
+  .container-menu-section-card:active .container-menu-section-card-price {
+    display: none;
+  }
+}
 .container-menu-section-card-content {
   padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   line-height: 1px;
-  overflow: hidden;
   white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 .container-menu-section-card-price {

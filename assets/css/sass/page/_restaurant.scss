@@ -37,6 +37,9 @@ body{
         
         &-title{
             margin-left: 20px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         
         &-heart{
@@ -61,6 +64,7 @@ body{
             line-height: normal;
             text-transform: uppercase;
             margin-left: 20px;
+
         }
 
         &-card{
@@ -102,6 +106,12 @@ body{
                     transform: translateX(-50px);  // Push the price to the left by the width of the hover container
                 }
                 
+                @media (max-width: 490px){
+                    
+                
+                .container-menu-section-card-price{
+                    display: none;
+                }}
                 
             }
 
@@ -121,19 +131,18 @@ body{
                 justify-content: center;
                 // align-items: center;
                 line-height: 1px;
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+
                 // width: 100%;
 
                 // text-align: left;
 
                 // &-title{
-                //     max-width: 300px;
-                  
                 //     white-space: nowrap;
+                //     overflow: hidden;
                 //     text-overflow: ellipsis;
-                    
                 
                 // }
                 // &-txt{
