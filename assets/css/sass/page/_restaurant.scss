@@ -12,7 +12,7 @@ body{
 }
 
 .container-menu{
-    height: 1350px;
+    height: 1200px;
     background-color:  $backGroundColorPrimary;
     border-top-right-radius: 40px;
     border-top-left-radius: 40px;
@@ -40,6 +40,7 @@ body{
         height: 300px;
         // margin-bottom: 40px;
         // background-color: red;
+        margin-bottom: 30px;
 
         &-title{
             font-size: 16px;
@@ -82,6 +83,11 @@ body{
             }
         }
     }
+
+    &-btn{
+        width: 30%;
+        margin: auto;
+    }
 }
 
 
@@ -119,6 +125,7 @@ body{
     }
     .container-menu{
         width: 60%;
+        height: 1270px;
        
         margin: auto;
         margin-top: -50px;

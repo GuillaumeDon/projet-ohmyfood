@@ -326,7 +326,7 @@ body {
 }
 
 .container-menu {
-  height: 1350px;
+  height: 1200px;
   background-color: #F6F6F6;
   border-top-right-radius: 40px;
   border-top-left-radius: 40px;
@@ -347,6 +347,7 @@ body {
 }
 .container-menu-section {
   height: 300px;
+  margin-bottom: 30px;
 }
 .container-menu-section-title {
   font-size: 16px;
@@ -374,6 +375,10 @@ body {
   flex-direction: column-reverse;
   padding: 15px;
 }
+.container-menu-btn {
+  width: 30%;
+  margin: auto;
+}
 
 .underline-title {
   text-decoration: underline;
@@ -387,6 +392,7 @@ body {
   }
   .container-menu {
     width: 60%;
+    height: 1270px;
     margin: auto;
     margin-top: -50px;
   }
