@@ -271,9 +271,13 @@ a {
   position: absolute;
   bottom: 40px;
   right: 30px;
+  width: 23px;
+  height: 21px;
+  fill: white;
+  stroke: #101010;
 }
 .restaurant-container-cards-item-contain-heart:active {
-  color: red;
+  fill: #c150a1;
 }
 
 article {

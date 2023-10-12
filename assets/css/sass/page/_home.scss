@@ -213,10 +213,20 @@
                     position: absolute;
                     bottom: 40px;
                     right: 30px;
+                    width:23px;
+                    height:21px;
+                    fill: white;
+                    stroke :#101010;
 
                     &:active{
-                        color: red;
+                        fill:#c150a1 ;
+
                     }
+                  
+
+                    // &:active{
+                    //     color: white;
+                    // }
                     }
                 }
 
