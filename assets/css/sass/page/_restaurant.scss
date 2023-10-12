@@ -3,12 +3,18 @@ body{
 }
 
 .intro{
-    background: url(./../../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 275px;
     width: 100%;
+
+    &-img{
+        height: 275px;
+        width: 100%;
+        object-fit: cover;
+    }
 }
 
 .container-menu{
