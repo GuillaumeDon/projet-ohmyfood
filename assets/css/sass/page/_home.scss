@@ -6,7 +6,8 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 0px 20px;
+    padding: 0px 20px 50px 20px;
+ 
 
 
     &-title {
@@ -246,7 +247,7 @@ article {
         height: 228.38px;
 
         &-title{
-            margin-left: 120px;
+            margin-left: 100px;
         }
 
         &-cards{
@@ -288,8 +289,14 @@ article {
                 
                 // margin: auto;
                
-                
-                
+                &-contain{
+                &-title{
+                    margin: 16px;
+                }
+                &-txt{
+                    margin: 16px;
+                }
+            }
             }
         }
     }
