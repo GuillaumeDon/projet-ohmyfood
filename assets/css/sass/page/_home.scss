@@ -51,22 +51,17 @@
         flex-direction: column;
         margin: auto;
 
-        // &-card{
-        //     &-icon{
-        //         &:hover{
-        //             background-color: violet;
-        //         }
-        //     }
+
         // }
     //    svg:hover{
     //     fill: green;
     //    }
 
         // width: 100%;
-        @media (min-width: 1250px) {
-            flex-direction: row;
-            margin: 50px 100px;
-        }
+        // @media (min-width: 1250px) {
+        //     flex-direction: row;
+        //     margin: 50px 100px;
+        // }
 
         &-card {
             background-color: $backGroundColorPrimary;
@@ -78,7 +73,7 @@
             align-items: center;
             border-radius: 20px;
             position: relative;
-            
+
 
 
 
@@ -86,7 +81,7 @@
                 position: relative;
                 right: 15px;
                 width :18px;
-                 height: 19px;
+                height: 19px;
             }
             #store:hover, #list-ul:hover, #mobile-screen-button:hover {
                 fill: #9356DC;
@@ -245,13 +240,18 @@ article {
 }
 
 
-@media (min-width: 1250px) {
+@media (min-width: $mediaQueriesDesktop) {
 
     .how-container{
         height: 228.38px;
 
         &-title{
             margin-left: 120px;
+        }
+
+        &-cards{
+            flex-direction: row;
+            margin: 50px 100px;
         }
     }
     .restaurant-container {

@@ -38,7 +38,7 @@
     }
 }
 
-@media (min-width : 1250px){
+@media (min-width : $mediaQueriesDesktop){
     .footer-container{
 
         height: 114px;
@@ -53,6 +53,7 @@
 
         &-logo{
             margin-left: 100px;
+            font-weight: 100;
         }
 
         &-ul{

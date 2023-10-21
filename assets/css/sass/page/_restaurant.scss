@@ -97,21 +97,21 @@ body{
                 justify-content: center; 
             }
         
-            &:active {
+            &:hover {
                 .hover-container {
                     width: 59px; 
                 }
         
                 .container-menu-section-card-price {
-                    transform: translateX(-50px);  // Push the price to the left by the width of the hover container
+                    transform: translateX(-50px); 
                 }
                 
-                @media (max-width: 490px){
+                // @media (max-width: 490px){
                     
                 
-                .container-menu-section-card-price{
-                    display: none;
-                }}
+                // .container-menu-section-card-price{
+                //     display: none;
+                // }}
                 
             }
 
@@ -163,21 +163,11 @@ body{
 
 
 
-
-
-
-
-
-
-
-
-
-
 .hover-container img {
     transition: transform 0.3s ease;
 }
 
-.container-menu-section-card:active .hover-container img {
+.container-menu-section-card:hover .hover-container img {
     transform: rotate(360deg);
 }
 
@@ -185,7 +175,7 @@ body{
 
 
 
-@media (min-width: 1250px) {
+@media (min-width: $mediaQueriesDesktop) {
 
     .intro{
         height: 343px;

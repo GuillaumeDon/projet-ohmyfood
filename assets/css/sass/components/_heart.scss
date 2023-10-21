@@ -1,14 +1,11 @@
 .heart{
- 
-    // position: absolute;
-    // bottom: 40px;
-    // right: 30px;
+
     width:23px;
     height:21px;
     fill: white;
     stroke :#101010;
 
-    &:active{
+    &:hover{
         fill:#FF79DA;
         stroke: none;
     }
