@@ -68,13 +68,19 @@
   height: 21px;
   fill: white;
   stroke: #101010;
-}
-.heart:hover {
-  fill: #FF79DA;
-  stroke: none;
+  transition: fill 3s ease;
 }
 .heart:hover {
   cursor: pointer;
+}
+.heart:active {
+  fill: #FF79DA;
+}
+@media (min-width: 1025px) {
+  .heart:hover {
+    fill: #FF79DA;
+    cursor: pointer;
+  }
 }
 
 .underline-title {
