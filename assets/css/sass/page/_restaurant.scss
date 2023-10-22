@@ -72,6 +72,7 @@ body {
             height: 69px;
             box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10);
             position: relative;
+            
 
             &:hover {
                 cursor: pointer;
@@ -89,6 +90,7 @@ body {
                 background-color: #99E2D0;
                 overflow: hidden;
                 transition: width 0.5s ease;
+           
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -117,12 +119,23 @@ body {
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
+                max-width: 70%;
+             
+                &-title{
+                    margin: 12px;
+                }
+
+                &-txt{
+                    margin: 12px;
+                }
+           
+            
             }
 
             &-price {
                 display: flex;
                 flex-direction: column-reverse;
-                padding: 15px;
+                padding: 12px;
             }
         }
     }

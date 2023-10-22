@@ -354,7 +354,7 @@ article {
     margin-right: 25px;
   }
 }
-@media (min-width: 1250px) {
+@media (min-width: 1224px) {
   .how-container {
     height: 223px;
   }
@@ -459,11 +459,18 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  max-width: 70%;
+}
+.container-menu-section-card-content-title {
+  margin: 12px;
+}
+.container-menu-section-card-content-txt {
+  margin: 12px;
 }
 .container-menu-section-card-price {
   display: flex;
   flex-direction: column-reverse;
-  padding: 15px;
+  padding: 12px;
 }
 .container-menu-btn {
   width: 30%;
