@@ -86,37 +86,9 @@ body {
             }
 
 
-            .hover-container {
-                position: absolute;
-                right: 0;
-                top: 0;
-                bottom: 0;
-                width: 0;
-                border-radius: 0 15px 15px 0;
-                background-color: #99E2D0;
-                overflow: hidden;
-                transition: width 0.5s ease;
-           
-                display: flex;
-                align-items: center;
-                justify-content: center;
+ 
 
 
-            }
-
-            &:active {
-                .hover-container {
-                    width: 59px;
-                }
-
-                .container-menu-section-card-price {
-                    transform: translateX(-50px);
-
-                }
-
-
-
-            }
 
 
 
@@ -173,21 +145,6 @@ body {
 
 
 
-.hover-container img {
-    transition: transform 0.3s ease;
-}
-
-.container-menu-section-card:active .hover-container img {
-    transform: rotate(360deg);
-}
-
-////////////////////TEST//////////////////////////////
-.container-menu-section-card:active .container-menu-section-card-content-title,
-.container-menu-section-card:active .container-menu-section-card-content-txt {
-    margin-right: calc(50px + 10px); 
-}
-
-/// ////////////////////////////////////////////////
 
 @media (min-width: $mediaQueriesTablet) {
 

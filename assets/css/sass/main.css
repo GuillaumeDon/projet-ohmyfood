@@ -51,6 +51,38 @@
   text-decoration-color: #99E2D0;
 }
 
+.hover-container {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  border-radius: 0 15px 15px 0;
+  background-color: #99E2D0;
+  overflow: hidden;
+  transition: width 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hover-container img {
+  transition: transform 0.3s ease;
+}
+
+.container-menu-section-card:active .hover-container {
+  width: 59px;
+}
+.container-menu-section-card:active .hover-container img {
+  transform: rotate(360deg);
+}
+.container-menu-section-card:active .container-menu-section-card-price {
+  transform: translateX(-50px);
+}
+.container-menu-section-card:active .container-menu-section-card-content-title,
+.container-menu-section-card:active .container-menu-section-card-content-txt {
+  margin-right: 30px;
+}
+
 html {
   margin: auto;
   padding: 0;
@@ -430,26 +462,6 @@ body {
 .container-menu-section-card:hover {
   cursor: pointer;
 }
-.container-menu-section-card .hover-container {
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 0;
-  border-radius: 0 15px 15px 0;
-  background-color: #99E2D0;
-  overflow: hidden;
-  transition: width 0.5s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.container-menu-section-card:active .hover-container {
-  width: 59px;
-}
-.container-menu-section-card:active .container-menu-section-card-price {
-  transform: translateX(-50px);
-}
 .container-menu-section-card-content {
   padding: 10px;
   display: flex;
@@ -483,19 +495,6 @@ body {
 .container-menu-btn {
   width: 30%;
   margin: auto;
-}
-
-.hover-container img {
-  transition: transform 0.3s ease;
-}
-
-.container-menu-section-card:active .hover-container img {
-  transform: rotate(360deg);
-}
-
-.container-menu-section-card:active .container-menu-section-card-content-title,
-.container-menu-section-card:active .container-menu-section-card-content-txt {
-  margin-right: 60px;
 }
 
 @media (min-width: 1025px) {
