@@ -1,4 +1,4 @@
-.header-container{
+.header-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,15 +7,15 @@
     position: relative;
 
 
-    &-logo{
+    &-logo {
         padding: 20px;
         height: 36px;
         width: 197px;
         box-sizing: content-box;
-        
+
     }
 
-    &-localisation{
+    &-localisation {
         background-color: $backGroundColorSecondary;
         display: flex;
         justify-content: center;
@@ -23,10 +23,10 @@
         padding: 10px;
         width: 98.6%;
         gap: 15px;
-        
-        
-        &-txt{
-            &[type="text"]{
+
+
+        &-txt {
+            &[type="text"] {
                 background-color: $backGroundColorSecondary;
                 border: none;
                 width: 95px;
