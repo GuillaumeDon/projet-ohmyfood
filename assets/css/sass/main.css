@@ -38,7 +38,7 @@
 .heart:active {
   fill: #FF79DA;
 }
-@media (min-width: 1250px) {
+@media (min-width: 1025px) {
   .heart:hover {
     fill: #FF79DA;
     cursor: pointer;
