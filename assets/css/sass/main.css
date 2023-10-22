@@ -1,52 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-#loading-screen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: fadeOut 2s forwards;
-  animation-delay: 2s;
-}
-
-.loader {
-  border: 6px solid #9356DC;
-  border-top: 6px solid #FF79DA;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes fadeOut {
-  to {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-.main-home {
-  opacity: 0;
-  animation: fadeIn 1s forwards;
-  animation-delay: 2s;
-}
-
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
-}
 .container-menu-section {
   opacity: 0;
   transform: translateY(20px);
@@ -420,7 +372,7 @@ p, h3 {
 }
 .restaurant-container-cards-item-contain-heart {
   position: absolute;
-  bottom: 40px;
+  bottom: 20px;
   right: 30px;
 }
 
