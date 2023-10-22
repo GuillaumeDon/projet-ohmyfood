@@ -211,16 +211,17 @@ p, h3 {
   border-radius: 20px;
   position: relative;
 }
+.how-container-cards-card:hover {
+  cursor: pointer;
+}
+.how-container-cards-card:hover #store, .how-container-cards-card:hover #list-ul, .how-container-cards-card:hover #mobile-screen-button {
+  fill: #9356DC;
+}
 .how-container-cards-card-icon {
   position: relative;
   right: 15px;
   width: 18px;
   height: 19px;
-}
-.how-container-cards-card #store:hover, .how-container-cards-card #list-ul:hover, .how-container-cards-card #mobile-screen-button:hover {
-  fill: #9356DC;
-  stroke: #9356DC;
-  cursor: pointer;
 }
 .how-container-cards-card-txt {
   display: flex;

@@ -52,7 +52,7 @@
         flex-direction: column;
         margin: auto;
 
-
+ 
         // }
     //    svg:hover{
     //     fill: green;
@@ -75,6 +75,12 @@
             border-radius: 20px;
             position: relative;
 
+            &:hover{
+                cursor: pointer;
+                #store, #list-ul, #mobile-screen-button{
+                    fill: #9356DC;
+                }
+            }
 
 
 
@@ -84,11 +90,11 @@
                 width :18px;
                 height: 19px;
             }
-            #store:hover, #list-ul:hover, #mobile-screen-button:hover {
-                fill: #9356DC;
-                stroke: #9356DC;
-                cursor: pointer;
-            }
+            // #store:hover, #list-ul:hover, #mobile-screen-button:hover {
+            //     fill: #9356DC;
+            //     stroke: #9356DC;
+            //     cursor: pointer;
+            // }
             
 
             &-txt {
