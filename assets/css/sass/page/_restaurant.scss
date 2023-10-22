@@ -161,23 +161,6 @@ body {
     }
 
 
-    .container-menu-section-card {
-        &:hover {
-            .hover-container {
-                width: 59px;
-            }
-
-            .container-menu-section-card-price {
-                transform: translateX(-50px);
-            }
-        }
-
-
-    }
-
-    .container-menu-section-card:hover .hover-container img {
-        transform: rotate(360deg);
-    }
-
+   
 
 }
