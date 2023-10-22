@@ -493,6 +493,11 @@ body {
   transform: rotate(360deg);
 }
 
+.container-menu-section-card:active .container-menu-section-card-content-title,
+.container-menu-section-card:active .container-menu-section-card-content-txt {
+  margin-right: 60px;
+}
+
 @media (min-width: 1025px) {
   .intro {
     height: 343px;

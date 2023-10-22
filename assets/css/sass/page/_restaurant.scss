@@ -182,7 +182,10 @@ body {
 }
 
 ////////////////////TEST//////////////////////////////
-
+.container-menu-section-card:active .container-menu-section-card-content-title,
+.container-menu-section-card:active .container-menu-section-card-content-txt {
+    margin-right: calc(50px + 10px); 
+}
 
 /// ////////////////////////////////////////////////
 
