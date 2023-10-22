@@ -1,63 +1,61 @@
-body{
+body {
     margin: 0;
 }
 
-.intro{
-    
+.intro {
+
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 275px;
     width: 100%;
 
-    &-img{
+    &-img {
         height: 275px;
         width: 100%;
         object-fit: cover;
     }
 }
 
-.container-menu{
+.container-menu {
     height: 100%;
-    background-color:  $backGroundColorPrimary;
+    background-color: $backGroundColorPrimary;
     border-top-right-radius: 40px;
     border-top-left-radius: 40px;
     margin-top: -50px;
     padding-bottom: 50px;
 
- 
-   
-    &-intro{
+    &-intro {
         // background-color: red;
         display: flex;
         align-items: center;
         justify-content: space-between;
         font-family: $fontFamilyTitle;
         margin-top: 30px;
-        
-        &-title{
+
+        &-title {
             margin-left: 20px;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
         }
-        
-        &-heart{
+
+        &-heart {
             margin-right: 20px;
         }
 
     }
 
-    .section-4{
+    .section-4 {
         height: 390px;
     }
-    &-section{
+
+    &-section {
         height: 300px;
-        // margin-bottom: 40px;
-        // background-color: red;
+
         margin-bottom: 30px;
 
-        &-title{
+        &-title {
             font-size: 16px;
             font-style: normal;
             font-weight: 300;
@@ -67,84 +65,61 @@ body{
 
         }
 
-        &-card{
+        &-card {
             // background-color: aqua;
             display: flex;
             justify-content: space-between;
             height: 69px;
             box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10);
             position: relative;
-            
-            &:hover{
+
+            &:hover {
                 cursor: pointer;
-  
+
             }
-            
+
 
             .hover-container {
                 position: absolute;
                 right: 0;
                 top: 0;
                 bottom: 0;
-                width: 0; 
+                width: 0;
                 border-radius: 0 15px 15px 0;
-                background-color: #99E2D0; 
-                overflow: hidden;  
-                transition: width 0.5s ease;  
+                background-color: #99E2D0;
+                overflow: hidden;
+                transition: width 0.5s ease;
                 display: flex;
                 align-items: center;
-                justify-content: center; 
+                justify-content: center;
             }
-        
+
             &:active {
                 .hover-container {
-                    width: 59px; 
+                    width: 59px;
                 }
-        
+
                 .container-menu-section-card-price {
-                    transform: translateX(-50px); 
+                    transform: translateX(-50px);
                 }
-                
-                // @media (max-width: 490px){
-                    
-                
-                // .container-menu-section-card-price{
-                //     display: none;
-                // }}
-                
+
             }
 
 
 
-            &-content{
-                // background-color: green;
+            &-content {
+
                 padding: 30px;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                // align-items: center;
                 line-height: 1px;
-                    white-space: nowrap;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-
-                // width: 100%;
-
-                // text-align: left;
-
-                // &-title{
-                //     white-space: nowrap;
-                //     overflow: hidden;
-                //     text-overflow: ellipsis;
-                
-                // }
-                // &-txt{
-                    
-                //     white-space: nowrap;
-                //     text-overflow: ellipsis
-                // }
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
-            &-price{
+
+            &-price {
                 display: flex;
                 flex-direction: column-reverse;
                 padding: 15px;
@@ -152,13 +127,11 @@ body{
         }
     }
 
-    &-btn{
+    &-btn {
         width: 30%;
         margin: auto;
     }
 }
-
-
 
 
 
@@ -172,41 +145,38 @@ body{
 
 
 
-
-
 @media (min-width: $mediaQueriesTablet) {
 
-    .intro{
+    .intro {
         height: 343px;
     }
-    .container-menu{
+
+    .container-menu {
         width: 60%;
         height: 1270px;
-       
+
         margin: auto;
         margin-top: -50px;
     }
 
 
-
-
-
-    .container-menu-section-card{
+    .container-menu-section-card {
         &:hover {
             .hover-container {
-                width: 59px; 
+                width: 59px;
             }
-    
+
             .container-menu-section-card-price {
-                transform: translateX(-50px); 
+                transform: translateX(-50px);
             }
+        }
+
+
     }
 
-    
-}
-.container-menu-section-card:hover .hover-container img {
-    transform: rotate(360deg);
-}
+    .container-menu-section-card:hover .hover-container img {
+        transform: rotate(360deg);
+    }
 
 
 }
