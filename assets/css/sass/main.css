@@ -211,10 +211,9 @@ p, h3 {
   border-radius: 20px;
   position: relative;
 }
-.how-container-cards-card:hover {
-  cursor: pointer;
-}
-.how-container-cards-card:hover #store, .how-container-cards-card:hover #list-ul, .how-container-cards-card:hover #mobile-screen-button {
+.how-container-cards-card:hover #store,
+.how-container-cards-card:hover #list-ul,
+.how-container-cards-card:hover #mobile-screen-button {
   fill: #9356DC;
 }
 .how-container-cards-card-icon {
@@ -350,7 +349,8 @@ article {
   .restaurant-container-cards-item-contain-txt {
     margin: 16px;
   }
-  .card-1, .card-3 {
+  .card-1,
+  .card-3 {
     margin-right: 25px;
   }
 }
