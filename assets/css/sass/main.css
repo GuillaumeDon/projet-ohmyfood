@@ -451,26 +451,34 @@ body {
   transform: translateX(-50px);
 }
 .container-menu-section-card-content {
-  padding: 30px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  line-height: 1px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  line-height: 29px;
   max-width: 70%;
 }
 .container-menu-section-card-content-title {
   margin: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  margin: 0;
 }
 .container-menu-section-card-content-txt {
   margin: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  margin: 0;
 }
 .container-menu-section-card-price {
   display: flex;
   flex-direction: column-reverse;
   padding: 12px;
+  font-weight: bold;
 }
 .container-menu-btn {
   width: 30%;

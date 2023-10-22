@@ -24,6 +24,8 @@ body {
     border-top-left-radius: 40px;
     margin-top: -50px;
     padding-bottom: 50px;
+    
+
 
     &-intro {
         // background-color: red;
@@ -54,6 +56,8 @@ body {
         height: 300px;
 
         margin-bottom: 30px;
+       
+
 
         &-title {
             font-size: 16px;
@@ -72,6 +76,8 @@ body {
             height: 69px;
             box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10);
             position: relative;
+         
+
             
 
             &:hover {
@@ -94,6 +100,8 @@ body {
                 display: flex;
                 align-items: center;
                 justify-content: center;
+
+
             }
 
             &:active {
@@ -103,7 +111,10 @@ body {
 
                 .container-menu-section-card-price {
                     transform: translateX(-50px);
+
                 }
+
+
 
             }
 
@@ -111,22 +122,35 @@ body {
 
             &-content {
 
-                padding: 30px;
+                padding: 10px;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                line-height: 1px;
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
+                line-height: 29px;
+                // white-space: nowrap;
+                // overflow: hidden;
+                // text-overflow: ellipsis;
                 max-width: 70%;
              
                 &-title{
                     margin: 12px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    max-width: 100%;
+                    margin: 0;
+                    // line-height: normal; 
+                    
                 }
 
                 &-txt{
                     margin: 12px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    max-width: 100%;
+                    margin: 0; 
+                    // line-height: normal; 
                 }
            
             
@@ -136,6 +160,7 @@ body {
                 display: flex;
                 flex-direction: column-reverse;
                 padding: 12px;
+                font-weight: bold;
             }
         }
     }
@@ -156,7 +181,10 @@ body {
     transform: rotate(360deg);
 }
 
+////////////////////TEST//////////////////////////////
 
+
+/// ////////////////////////////////////////////////
 
 @media (min-width: $mediaQueriesTablet) {
 
