@@ -4,7 +4,7 @@
     height:21px;
     fill: white;
     stroke :#101010;
-    transition: fill 3s ease;
+    transition: fill 3s ease; //transition : choix de la propriété à animer, la durée et comment.
 
     &:hover{
         cursor: pointer;

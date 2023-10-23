@@ -7,13 +7,13 @@
     border-radius: 0 15px 15px 0;
     background-color: #99E2D0;
     overflow: hidden;
-    transition: width 0.5s ease;
+    transition: width 0.5s ease; //transition : choix de la propriété à animer, la durée et comment.
     display: flex;
     align-items: center;
     justify-content: center;
 
     img {
-        transition: transform 0.3s ease;
+        transition: transform 0.3s ease; 
     }
 }
 
@@ -24,7 +24,7 @@
             width: 59px;
 
             img {
-                transform: rotate(360deg);
+                transform: rotate(360deg); //transform pour pivoter, redimmensionner,incliner
             }
         }
 
@@ -34,7 +34,7 @@
 
         .container-menu-section-card-content-title,
         .container-menu-section-card-content-txt {
-            margin-right: calc(20px + 10px);
+            margin-right: 40px;
         }
     }
 }

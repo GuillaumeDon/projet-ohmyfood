@@ -166,7 +166,7 @@
 }
 .container-menu-section-card:active .container-menu-section-card-content-title,
 .container-menu-section-card:active .container-menu-section-card-content-txt {
-  margin-right: 30px;
+  margin-right: 40px;
 }
 
 @media (min-width: 1025px) {
